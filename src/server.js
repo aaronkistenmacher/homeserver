@@ -18,4 +18,6 @@ app.get('/', (req, res) => {
   res.send('Hello Node');
 });
 
+app.use('/backroombingo', express.static('../backroombingo'));
+
 app.listen(8080);
